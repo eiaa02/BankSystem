@@ -1,9 +1,12 @@
 // src/com/bank/BankMenu.java
-package menu;
+package main;
 
 import function.Deposit1;
 import login.StaffLogin;
 import login.UserLogin;
+import menu.AdminMenu;
+import menu.StaffMenu;
+import menu.UserMenu;
 import register.UserRegistration;
 
 import java.util.Scanner;
