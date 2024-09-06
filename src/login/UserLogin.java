@@ -21,9 +21,9 @@ public class UserLogin {
 
         try (Connection conn = DBConnection.getConnection()) {
             String sql = "SELECT u.user_id, u.password_hash, a.status " +
-                         "FROM users u " +
-                         "JOIN accounts a ON u.user_id = a.user_id " +
-                         "WHERE u.account_name = ?";
+                    "FROM users u " +
+                    "JOIN accounts a ON u.user_id = a.user_id " +
+                    "WHERE u.account_name = ?";
 
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, accountName);

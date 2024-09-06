@@ -13,9 +13,9 @@ public class Transfer {
      * 进行账户间的转账操作。
      * 该方法从发起方账户向接收方账户转账，更新双方的余额，并记录转账和交易信息。
      *
-     * @param senderAccountId 发起方的账户ID
+     * @param senderAccountId    发起方的账户ID
      * @param receiverCardNumber 接收方的银行卡号
-     * @param amount 转账金额
+     * @param amount             转账金额
      */
     public static void transferMoney(int senderAccountId, String receiverCardNumber, double amount) {
         // 使用 try-with-resources 自动关闭数据库连接

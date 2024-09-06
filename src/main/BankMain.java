@@ -11,7 +11,7 @@ import register.UserRegistration;
 
 import java.util.Scanner;
 
-public class BankMenu {
+public class BankMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean running = true; // 控制主菜单的循环运行

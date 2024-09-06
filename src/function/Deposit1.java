@@ -57,10 +57,10 @@ public class Deposit1 {
 
                 // 7. 插入交易记录到 transactions 表
                 String insertTransactionSql = "INSERT INTO transactions (user_id, transaction_type, amount) " +
-                                              "SELECT u.user_id, '存款', ? " +
-                                              "FROM accounts a " +
-                                              "JOIN users u ON a.user_id = u.user_id " +
-                                              "WHERE a.bank_card_number = ?";
+                        "SELECT u.user_id, '存款', ? " +
+                        "FROM accounts a " +
+                        "JOIN users u ON a.user_id = u.user_id " +
+                        "WHERE a.bank_card_number = ?";
                 PreparedStatement insertTransactionPs = conn.prepareStatement(insertTransactionSql);
                 insertTransactionPs.setDouble(1, amount);  // 存款金额
                 insertTransactionPs.setString(2, cardNumber);  // 使用银行卡号作为条件
