@@ -1,51 +1,47 @@
-Here's a refined version of your README for your bank management system project:
-
 ---
 
-# Bank Management System
+# 银行管理系统
 
-## Project Overview
+## 项目概述
 
-This **Bank Management System** is a comprehensive platform designed to facilitate banking operations for both users and staff. It allows users to manage their personal banking accounts, perform transactions, and securely handle their finances, while staff members can oversee account details and manage user data. Built using **Java**, **JDBC**, and **MySQL**, this system ensures smooth and efficient interaction between users and banking services.
+该**银行管理系统**是一款旨在为用户和工作人员提供高效银行操作的平台。用户可以管理个人银行账户、执行金融交易并安全处理财务事务；工作人员则可以监督账户信息并管理用户数据。系统基于 **Java**、**JDBC** 和 **MySQL**，确保用户与银行服务之间的流畅交互。
 
-## Features
+## 功能介绍
 
-### User Registration and Account Management:
-- **User Registration**: Users can create a new bank account by providing personal information such as name, gender, age, phone number, address, and passwords (login and transaction).
-- **12-Digit Bank Card Number**: Automatically generated and assigned upon account creation.
-- **Account Management**: Users can update personal details and manage their banking information with ease.
+### 用户注册与账户管理：
+- **用户注册**：用户可以创建新的银行账户，填写个人信息如姓名、性别、年龄、电话、地址以及登录密码和交易密码。
+- **12位银行卡号**：系统在注册时自动生成并分配给用户。
+- **账户管理**：用户可以更新个人信息并管理其银行账户信息。
 
-### User Functionalities:
-- **View Account Information**: Check account balance and detailed account information.
-- **Deposit**: Add funds to the user's bank account.
-- **Withdraw**: Securely withdraw funds with transaction password verification.
-- **Transfer**: Transfer funds to other user accounts after verifying the transaction password.
-- **Password Update**: Change login and transaction passwords for enhanced security.
-- **Account Closure**: Users can choose to close their account, which will remove all associated data.
+### 用户功能：
+- **查看账户信息**：用户可以查看账户余额和详细的账户信息。
+- **存款**：将资金存入用户的银行账户。
+- **取款**：用户通过验证交易密码从账户中取款。
+- **转账**：通过验证交易密码将资金转至其他用户账户。
+- **修改密码**：用户可以修改登录密码和交易密码以增强安全性。
+- **销户**：用户可以选择注销账户，系统将删除相关数据。
 
-### Staff Functionalities:
-- **View Transaction Records**: Access transaction logs, including deposits, withdrawals, and transfers across all accounts.
-- **Account Status Inquiry**: Review account balances and current status (Active/Closed) of all users.
-- **Modify User Information**: Edit user details such as name, gender, age, phone number, and address.
+### 工作人员功能：
+- **查看交易记录**：工作人员可以查看所有用户的交易日志，包括存款、取款和转账记录。
+- **查询账户状态**：查看所有用户账户的余额和当前状态（激活/销户）。
+- **修改用户信息**：工作人员可以编辑用户信息，如姓名、性别、年龄、电话和地址。
 
-## Database Structure
+## 数据库结构
 
-- **Users Table (`users`)**: Stores personal information, including name, gender, age, phone number, address, passwords, and transaction passwords.
-- **Accounts Table (`accounts`)**: Contains details about user bank accounts, such as account balance and bank card number.
-- **Transactions Table (`transactions`)**: Logs all transaction activities, including deposits, withdrawals, and transfers.
-- **Deposit/Withdrawal/Transfer Records**: Separate tables to store detailed logs for each transaction type.
+- **用户表 (`users`)**：存储用户个人信息，包括姓名、性别、年龄、电话、地址、登录密码和交易密码。
+- **账户表 (`accounts`)**：存储用户的银行账户信息，如账户余额和银行卡号。
+- **交易表 (`transactions`)**：记录所有用户的交易活动，包括存款、取款和转账。
+- **存款/取款/转账记录表**：分别存储每种交易的详细记录。
 
-## Technologies Used
-- **Java**: Core programming language used for developing the system.
-- **JDBC**: For connecting the system with the MySQL database.
-- **MySQL**: Relational database for storing user and transaction data.
+## 使用技术
+- **Java**：核心编程语言，用于系统开发。
+- **JDBC**：用于连接系统与 MySQL 数据库。
+- **MySQL**：关系型数据库，用于存储用户和交易数据。
 
-## How to Run the Project
-1. Clone the repository to your local machine.
-2. Set up the MySQL database with the provided schema.
-3. Ensure JDBC connectivity is correctly configured.
-4. Run the Java application using your preferred IDE or command line.
+## 如何运行项目
+1. 将项目代码克隆至本地机器。
+2. 使用提供的数据库架构设置 MySQL 数据库。
+3. 确保 JDBC 连接配置正确。
+4. 使用您偏好的 IDE 或命令行运行 Java 应用程序。
 
 ---
-
-This README provides an organized, clear summary of the project, detailing the features, database structure, and technologies used.
